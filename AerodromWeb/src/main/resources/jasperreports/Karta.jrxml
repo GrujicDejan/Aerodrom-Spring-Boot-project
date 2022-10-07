@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Karta" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4d7e8e5-3a88-4cde-b8a9-a36c3d9acc1b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="putnik" class="java.lang.String"/>
+	<parameter name="let" class="java.lang.String"/>
+	<parameter name="aerodromOdlazni" class="java.lang.String"/>
+	<parameter name="aerodromDolazni" class="java.lang.String"/>
+	<parameter name="vremePolaska" class="java.lang.String"/>
+	<parameter name="datumDolaska" class="java.lang.String"/>
+	<parameter name="datumPolaska" class="java.lang.String"/>
+	<parameter name="cena" class="java.lang.Double"/>
+	<parameter name="opis" class="java.lang.String"/>
+	<parameter name="mesto" class="java.lang.String"/>
+	<parameter name="kompanija" class="java.lang.String"/>
+	<parameter name="presedanja" class="java.lang.String"/>
+	<parameter name="datumKreiranja" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="e1d79c7e-9b2c-499c-a342-320e121c1223"/>
+				<staticText>
+					<reportElement x="20" y="20" width="60" height="43" forecolor="#FFFFFF" uuid="fed32185-4339-4107-90b2-10bacc36c480"/>
+					<textElement>
+						<font size="30" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Let:]]></text>
+				</staticText>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="19" y="92" width="555" height="1" uuid="0a7202e3-d637-4697-af10-3b8eccf6a75f"/>
+				</line>
+				<textField>
+					<reportElement x="80" y="21" width="359" height="42" forecolor="#FFFFFF" uuid="3ee821b3-2946-44d0-aac7-c34be21231c6"/>
+					<textElement>
+						<font size="26"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{let}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="460" y="45" width="100" height="44" forecolor="#FFFFFF" uuid="dd8339b3-04ab-4c3b-858a-8d51a7f0b9bc"/>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{opis}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="275">
+			<staticText>
+				<reportElement x="0" y="10" width="109" height="22" uuid="cf7fddca-723c-4501-86da-41acae08f823"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Rezervacija na ime:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="10" width="363" height="22" uuid="6a79d6ed-a62d-42fa-9677-1b1ac3ef646d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{putnik}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="41" width="111" height="22" uuid="9dd1d1ce-9c73-45c1-b0c8-6d362eb6cfd1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Polazak:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="41" width="363" height="22" uuid="9e2fe9ed-96dd-4395-9a84-db00457925bc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aerodromOdlazni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="84" width="363" height="20" uuid="c0263136-3e16-4bd2-8e5c-ace0aea7b9d6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vremePolaska}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="63" width="363" height="21" uuid="c70f6a34-8cad-4102-83d2-f9fe8fd51865"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datumPolaska}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="112" width="114" height="22" uuid="447ac5de-e998-40f4-b922-3d34e882eb6f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Dolazak:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="112" width="363" height="20" uuid="38a40e7a-2ec4-4baa-9bdd-0d1ab7b714bb"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aerodromDolazni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="132" width="363" height="20" uuid="f7ac51a1-96dd-4c03-bf25-5f10e854b4b8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datumDolaska}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="161" width="116" height="24" uuid="23cd1f5b-0a8d-498b-9d0a-b24391efdd53"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Presedanja:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="118" y="161" width="436" height="24" uuid="95183477-7e01-4d52-ab45-b306f847dec6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{presedanja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="219" width="360" height="30" uuid="390d456a-6398-41fb-8539-8350986b879e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cena} + "e"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="193" width="360" height="24" uuid="0630b3c2-f141-451e-816d-d65f17cbd307"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{kompanija}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="218" width="114" height="30" uuid="72c9bcd4-1e65-4b6a-b188-c192548a56e5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Cena:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="250" width="116" height="23" uuid="4a4cbe9f-8478-4317-91f5-ad3d5b3dea40"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Mesto:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="250" width="363" height="23" uuid="8c21f9b4-a1b9-4207-9b78-d5b1a6943051"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mesto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="193" width="118" height="24" uuid="b4677d99-0918-4b02-99b9-402df13700e4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Prevoz:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band/>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20">
+			<textField>
+				<reportElement x="420" y="0" width="100" height="20" uuid="0381100d-7d4f-447b-b896-7e1471af8f08"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datumKreiranja}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-21" y="0" width="595" height="1" forecolor="#666666" uuid="35dbf83e-d61e-45d0-b465-d3e289d0d1fe"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
